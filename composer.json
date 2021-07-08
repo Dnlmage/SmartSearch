@@ -1,0 +1,17 @@
+{
+  "name": "DanilLozenko/SmartSearch",
+  "description": "SEO Toolkit by Amasty",
+  "type": "magento2-module",
+  "version": "1.16.13",
+  "license": [
+    "Commercial"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "DanilLozenko\\SmartSearch\\": ""
+    }
+  }
+}

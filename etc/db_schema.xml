@@ -1,0 +1,17 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="DanilLozenko_smart_search_index" resource="default" engine="innodb">
+        <column xsi:type="smallint" name="id" padding="6" unsigned="false" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="sku"  nullable="true" comment="sku"/>
+        <column xsi:type="text" name="name"  nullable="true" comment="slider name"/>
+        <column xsi:type="varchar" name="image"  nullable="true" comment="status"/>
+        <column xsi:type="varchar" name="category_id"  nullable="true" comment="category"/>
+        <column xsi:type="varchar" name="store_id"  nullable="true" comment="store"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+        <index referenceId="DanilLozenko_SMART_SEARCH" indexType="fulltext">
+            <column name="name"/>
+        </index>
+    </table>
+</schema>

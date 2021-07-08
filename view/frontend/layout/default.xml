@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="DanilLozenko_SmartSearch::css/smart-search.css"/>
+    </head>
+    <body>
+        <referenceBlock name="main.content">
+            <block class="DanilLozenko\SmartSearch\Block\Config" template="DanilLozenko_SmartSearch::Config.phtml" name="DanilLozenko_smart_search_config" before="top.search"/>
+        </referenceBlock>
+        <referenceContainer name="header-wrapper">
+            <block class="DanilLozenko\SmartSearch\Block\SearchFormCategories" ifconfig="DanilLozenko_smartsearch/general/enabled" template="DanilLozenko_SmartSearch::SearchFormCategories.phtml" name="DanilLozenko_smart_search_category" before="top.search"/>
+        </referenceContainer>
+    </body>
+</page>

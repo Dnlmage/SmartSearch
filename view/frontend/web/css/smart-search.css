@@ -1,0 +1,11 @@
+#search_autocomplete .smartsearch {
+    height: 100px
+}
+
+#search_autocomplete .smartsearch img {
+    height: 100px
+}
+
+#category-search-select{
+    width: 50%;
+}

@@ -1,0 +1,16 @@
+<?php $categories = $block->getStoreCategories(); ?>
+
+<select name="select" id="category-search-select">
+    <option value="0"><?= __('All') ?></option>
+    <?php foreach($categories as $category): ?>
+        <option value="<?= $category->getId() ?>"><?= $category->getName() ?></option>
+    <?php endforeach; ?>
+</select>
+
+<script type="text/x-magento-init">
+        {
+            "#search": {
+                "DanilLozenko_SmartSearch/js/smartSearch": {}
+                }
+        }
+</script>
